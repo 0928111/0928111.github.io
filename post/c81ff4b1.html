@@ -4,7 +4,7 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="CS速成P4, Wsrs">
+    <meta name="keywords" content="python知识学习, Wsrs">
     <meta name="description" content="">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
@@ -16,7 +16,7 @@
     <!-- Global site tag (gtag.js) - Google Analytics -->
 
 
-    <title>CS速成P4 | Wsrs</title>
+    <title>python知识学习 | Wsrs</title>
     <link rel="icon" type="image/png" href="/favicon.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.css">
@@ -310,12 +310,12 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/3.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/17.jpg')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title">CS速成P4</h1>
+                    <h1 class="description center-align post-title">python知识学习</h1>
                 </div>
             </div>
         </div>
@@ -429,9 +429,13 @@
             <div class="row tag-cate">
                 <div class="col s7">
                     
-                          <div class="article-tag">
-                            <span class="chip bg-color">No tag</span>
-                          </div>
+                    <div class="article-tag">
+                        
+                            <a href="/tags/%E6%8C%81%E7%BB%AD%E6%9B%B4%E6%96%B0%E4%B8%AD/">
+                                <span class="chip bg-color">持续更新中</span>
+                            </a>
+                        
+                    </div>
                     
                 </div>
                 <div class="col s5 right-align">
@@ -443,7 +447,7 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-minus fa-fw"></i>Publish Date:&nbsp;&nbsp;
-                    2023-01-06
+                    2023-01-07
                 </div>
                 
 
@@ -464,47 +468,77 @@
 
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <h1 id="二进制"><a href="#二进制" class="headerlink" title="二进制"></a>二进制</h1><h2 id="十进制与二进制"><a href="#十进制与二进制" class="headerlink" title="十进制与二进制"></a>十进制与二进制</h2><hr>
-<table>
-<thead>
-<tr>
-<th align="center">100</th>
-<th align="center">10</th>
-<th align="center">1</th>
-</tr>
-</thead>
-<tbody><tr>
-<td align="center">2</td>
-<td align="center">3</td>
-<td align="center">6</td>
-</tr>
-</tbody></table>
-<p>十进制:236  </p>
+                <h1 id="Python学习"><a href="#Python学习" class="headerlink" title="Python学习"></a>Python学习</h1><p>[TOC]</p>
+<h2 id="函数"><a href="#函数" class="headerlink" title="函数"></a>函数</h2><h3 id="函数的分类"><a href="#函数的分类" class="headerlink" title="函数的分类"></a>函数的分类</h3><ul>
+<li>内置函数<blockquote>
+<ul>
+<li><code>print</code></li>
+<li><code>id</code></li>
+<li><code>int</code></li>
+<li><code>str</code></li>
+<li><code>max</code></li>
+<li><code>min</code></li>
+<li><code>range</code></li>
+</ul>
+</blockquote>
+</li>
+<li>自定义函数<br>自己开发，来实现我们想要的功能。</li>
+</ul>
+<p><em>注：</em><br><mark>无论是自定义函数还是内置函数写法都是一样的</mark></p>
+<h3 id="通过关键字def的功能实现Python函数的创建"><a href="#通过关键字def的功能实现Python函数的创建" class="headerlink" title="通过关键字def的功能实现Python函数的创建"></a>通过关键字def的功能实现Python函数的创建</h3><ul>
+<li><p>函数定义的过程  </p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">def 函数名 函数需要的参数(也可以没有)):</span><br><span class="line">          书写任意Python代码</span><br><span class="line">          返回值</span><br><span class="line"></span><br><span class="line">def name(args...):</span><br><span class="line">          代码</span><br><span class="line">          return</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>return——函数的返回 </p>
+<blockquote>
+<p>下面是<code>print</code>和<code>return</code>的区别和实例</p>
+</blockquote>
+</li>
+</ul>
+<p> 1.将结果返回关键字<br> 2.只有在函数体内才可以使用<br> 3.return可以返回所有的python类型<br> 4.<code>return</code>代表将函数体内的某一个值返回到函数体外，并且标志着函数体执行完成。<br> <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">#codign utf-8</span></span><br><span class="line"><span class="comment">#首字母大写函数</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">def</span> <span class="title function_">captialize</span>(<span class="params">data</span>):</span><br><span class="line">    index=<span class="number">0</span></span><br><span class="line">    temp=<span class="string">&#x27;&#x27;</span></span><br><span class="line">    <span class="keyword">for</span>  item <span class="keyword">in</span> data:</span><br><span class="line">      <span class="keyword">if</span> index == <span class="number">0</span>:</span><br><span class="line">        temp= item.upper()</span><br><span class="line">     <span class="keyword">else</span>:</span><br><span class="line">       temp +=item</span><br><span class="line">       index +=<span class="number">1</span> </span><br><span class="line">   <span class="keyword">return</span> temp  </span><br><span class="line"></span><br></pre></td></tr></table></figure></p>
+ <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"> <span class="comment"># coding utf-8</span></span><br><span class="line"> <span class="comment"># message函数，这个函数用来打印输入的信息和信息类型</span></span><br><span class="line"> <span class="keyword">def</span> <span class="title function_">message</span>(<span class="params">message,message_type</span>):</span><br><span class="line">     new_message=<span class="string">&quot;[%s] %s&quot;</span>%(message_type,message)</span><br><span class="line">     <span class="built_in">print</span>(new_message)</span><br><span class="line"></span><br><span class="line">message(message=<span class="string">&#x27;今天天气真好&#x27;</span>,message_type=info) <span class="comment">#ifno代表信息是普通信息</span></span><br><span class="line">resutlt=message(message=<span class="string">&#x27;今天天气真好&#x27;</span>,message_type=<span class="string">&#x27;info&#x27;</span>)</span><br><span class="line"><span class="built_in">print</span>(resutlt) <span class="comment">#这里result为None，原因是函数没有返回值</span></span><br></pre></td></tr></table></figure>
+<h3 id="函数的传参"><a href="#函数的传参" class="headerlink" title="函数的传参"></a>函数的传参</h3><ul>
+<li>过去使用过很多内置函数，也要往函数调用的（）写入参数，但是我们一直没有说什么是 <strong>参数</strong>  </li>
+<li>有些函数需要执行函数体的业务，需要一些条件数据，需要的条件数据，会在函数定义的时候，在函数（）内以变量的形式定义出来，这些条件数据就是<strong>参数</strong></li>
+</ul>
 <hr>
-<table>
-<thead>
-<tr>
-<th>4</th>
-<th>2</th>
-<th>1</th>
-</tr>
-</thead>
-<tbody><tr>
-<td>1</td>
-<td>0</td>
-<td>1</td>
-</tr>
-</tbody></table>
-<p>二进制：5</p>
-<p>从这里我们可以发现，十进制每一”位”都是以10倍数增长的，二位数同理也就是以2倍数增长的。<br>这一个“1或者0”我们就把它叫做 <strong>“位”(bit)</strong> 。  </p>
-<hr>
-<p>由于8位很常见，我们就给了它一个单位叫做： <strong>字节(bytes)</strong><br><strong>1byte&#x3D;8bits</strong></p>
-<hr>
-<h2 id="正负数"><a href="#正负数" class="headerlink" title="正负数"></a>正负数</h2><p>但是我们生活中的数字不可能只有正数，于是计算机就是用第一位来表示正负，通过判断第一位<br>是0还是1，我们就可以知道这个数是正还是负。</p>
-<hr>
-<h2 id="浮点数"><a href="#浮点数" class="headerlink" title="浮点数"></a>浮点数</h2><p>计算机使用科学计数法的方式来表示浮点数<br>就比如：0.718*$10^3$(我们发现它由有效数字和指数构成了不同的数)<br>在32位计算机中,使用第一位后的8位来存贮指数，使用剩下的23位存储有效数字</p>
-<hr>
-<h2 id="字符串"><a href="#字符串" class="headerlink" title="字符串"></a>字符串</h2><p>ASCII码和Unicode<br>详细可以了解下面这篇文章：<a target="_blank" rel="noopener" href="https://blog.csdn.net/weixin_29079743/article/details/113554064">提示缺少unicode打开乱码_教你如何破译乱码</a></p>
+<p>1.必传参数  </p>
+<ul>
+<li>没有默认值，在调用的时候不传入就会报错  </li>
+<li>在定义函数的时候后边没有等号与默认值</li>
+<li>错误：<code>def add(a=1,b=2)</code></li>
+</ul>
+<h2 id="2-默认参数-在定义的时候，定义函数含有默认值，通过赋值语句给它一个默认的值-def-add-a-b-1-96-96-96-python-def-add-a-b-x3D-1-return-a-b-return-x3D-add-1"><a href="#2-默认参数-在定义的时候，定义函数含有默认值，通过赋值语句给它一个默认的值-def-add-a-b-1-96-96-96-python-def-add-a-b-x3D-1-return-a-b-return-x3D-add-1" class="headerlink" title="2.默认参数- 在定义的时候，定义函数含有默认值，通过赋值语句给它一个默认的值- def add(a,b=1)- &#96;&#96;&#96;python  def  add(a,b&#x3D;1)      return a+b  return &#x3D;add(1)"></a>2.默认参数<br>- 在定义的时候，定义函数含有默认值，通过赋值语句给它一个默认的值<br>- <code>def add(a,b=1)</code><br>- &#96;&#96;&#96;python<br>  def  add(a,b&#x3D;1)<br>      return a+b<br><br>  return &#x3D;add(1)</h2><p>  [output]&#x3D;  2 #原因b有默认值，a是必传参数，注意不是讲a,b赋值为1<br>  <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">3.不确定参数or可变参数  </span><br><span class="line">- ```python</span><br><span class="line">    def add(*args,**kwargs):</span><br><span class="line">  #*args代表：将无参数的值合并成元组</span><br><span class="line">  #**kwargs：讲有参数与默认值的赋值语句合并成字典</span><br><span class="line">      add(1,2,3,name=&#x27;dewei&#x27;,age=33)</span><br></pre></td></tr></table></figure></p>
+<ul>
+<li><p>&#96;&#96;&#96;python</p>
+<h1 id="coding-utf-8"><a href="#coding-utf-8" class="headerlink" title="coding:utf-8"></a>coding:utf-8</h1><p>def add(a,b,c&#x3D;3):<br>return a+b+c<br>  result&#x3D;add(1,2)<br>  print(result)</p>
+<p>print(‘—‘)<br>result2&#x3D;add(1,2,6)<br>print(result2)</p>
+<p>print(‘—‘)</p>
+<p>def test_args(*args,**kwargs):<br>print(args,type(args))<br>print(kwargs,type(kwargs))<br>test_args(1,2,3,4,5,6,name&#x3D;’dewei’,age&#x3D;23,tp&#x3D;124)</p>
+<p>def test_args_super(*args,**kwargs):<br>if len(args)&gt;&#x3D; 1:<br>    print(args[0])<br>  if ‘name’ in kwargs:<br>  print(kwargs[‘name’])<br>  else:<br>  print(“no name “)<br>  print(args,len(args))<br>  print(kwargs,len(kwargs))</p>
+<p>test_args_super(1,name&#x3D;’dewei’)</p>
+<p>a&#x3D;(‘python’,’django’)<br>b&#x3D;{‘nmae’:’dewei’}<br>test_args_super(a,b)<br>test_args_super(*a,**b)</p>
+</li>
+</ul>
+<p>4.参数规则  </p>
+<ul>
+<li><code>def add(a,b=1,*args,**kwargs)</code>:参数的定义从左到右依次是 <em>必传参数</em>、<em>默认参数</em>、<em>可变元组参数？</em>、<em>可变字典参数</em></li>
+<li>函数的参数传递很灵活</li>
+<li>必传参数与默认参数的传递多样化</li>
+<li><pre><code class="python">        def add(a,b=1)；
+          return a+b
+        add(b=1,a=3)#这个时候是可以调换位置的，但是仅限于这种模式！ 
+        
+        def test(a,b-1,*args):
+          print(a,b,args)
+        
+        s=(1,2)
+        test(1,2,*s)#正常输出
+        test(a=1,b=2,*s)#会报错，原因是赋值形式要将*s放在第一位
+        
+</code></pre>
+</li>
+</ul>
 
                 
             </div>
@@ -531,7 +565,7 @@
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="http://example.com/post/61147002.html">http://example.com/post/61147002.html</a>
+                    <a href="http://example.com/post/c81ff4b1.html">http://example.com/post/c81ff4b1.html</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -568,7 +602,11 @@
                 <div class="post-meta__tag-list" style="display: inline-block;">
                     
                         <div class="article-tag">
-                            <span class="chip bg-color">No tag</span>
+                            
+                                <a href="/tags/%E6%8C%81%E7%BB%AD%E6%9B%B4%E6%96%B0%E4%B8%AD/">
+                                    <span class="chip bg-color">持续更新中</span>
+                                </a>
+                            
                         </div>
                     
                 </div>
@@ -738,9 +776,10 @@
 <article id="prenext-posts" class="prev-next articles">
     <div class="row article-row">
         
-        <div class="article col s12 m6" data-aos="fade-up">
+        <div class="article col s12 m6" data-aos="fade-up" data-aos="fade-up">
             <div class="article-badge left-badge text-color">
-                <i class="fas fa-chevron-left"></i>&nbsp;Previous</div>
+                <i class="far fa-dot-circle"></i>&nbsp;Current
+            </div>
             <div class="card">
                 <a href="/post/c81ff4b1.html">
                     <div class="card-image">
@@ -758,9 +797,9 @@
                         
                     </div>
                     <div class="publish-info">
-                        <span class="publish-date">
-                            <i class="far fa-clock fa-fw icon-date"></i>2023-01-07
-                        </span>
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2023-01-07
+                            </span>
                         <span class="publish-author">
                             
                             <i class="fas fa-user fa-fw"></i>
@@ -769,6 +808,7 @@
                         </span>
                     </div>
                 </div>
+
                 
                 <div class="card-action article-tags">
                     
@@ -787,13 +827,13 @@
                 Next&nbsp;<i class="fas fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/post/51c44b51.html">
+                <a href="/post/61147002.html">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/8.jpg" class="responsive-img" alt="CS速成课P3">
+                        <img src="/medias/featureimages/3.jpg" class="responsive-img" alt="CS速成P4">
                         
-                        <span class="card-title">CS速成课P3</span>
+                        <span class="card-title">CS速成P4</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
